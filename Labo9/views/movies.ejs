@@ -1,0 +1,11 @@
+<%- include('header')%>
+<ul>
+<% for(let i=0; i<movies.length; i++) {%>
+
+    <li><%= movies[i].name%> <a href="/movie/<%= i %>">Link</a> <br></li>
+
+<%};%>
+</lu>
+<a href="/">To landing page</a>
+
+</body></html>

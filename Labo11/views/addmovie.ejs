@@ -1,0 +1,42 @@
+<%- include('header')%>
+
+<%
+    if(info !== undefined){
+%>
+        <%= info %> <br/>
+<%
+    }
+%>
+
+
+<form action="addmovie" method="post">
+    <div>
+        <p>
+            <label for="name">Title?</label>
+            <input name="name" id="name">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="myScore">Score?</label>
+            <input name="myScore" id="myScore">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="timesViewed">Times viewd?</label>
+            <input name="timesViewed" id="timesViewed">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="year">Year?</label>
+            <input name="year" id="year">
+        </p>
+    </div>
+    <div>
+        <button type="submit">Send!</button>
+    </div>
+</form>
+
+</body></html>

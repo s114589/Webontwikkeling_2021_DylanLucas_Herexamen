@@ -1,0 +1,15 @@
+<%- include('header')%>
+<ul>
+<% for(let i=0; i<movies.length; i++) {%>
+
+    <li><%= movies[i].name%><br/>
+         <a href="/movies/<%= movies[i]._id %>">Link</a> <br>
+         <a href="/removemovie/<%= movies[i]._id %>">delete</a> <br>
+    </li>
+
+<%};%>
+</lu>
+<a href="/addmovie">Add a movie</a><br/>
+<a href="/">To landing page</a>
+
+</body></html>
