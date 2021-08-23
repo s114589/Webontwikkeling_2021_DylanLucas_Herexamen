@@ -1,0 +1,58 @@
+<html>
+<head></head>
+<body>
+<%- include('header')%>
+
+<% 
+    if(info !== undefined)
+{%>
+        <%= info %> <br/>
+<%
+    }
+%>
+    <div style="display:flex;justify-content: center;">
+        <div style="background-color:gray;text-align: center;width:35%;">
+            <form action="addAnt" method="post">
+                <div>
+                    <p>
+                        <label for="name">Name?</label>
+                        <input name="name" id="name">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="queenSize">Average queen size?</label>
+                        <input name="queenSize" id="queenSize">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="workerSize">Average worker size?</label>
+                        <input name="workerSize" id="workerSize">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="polymorphic">Is the species polymorpic? yes or no</label>
+                        <input name="polymorphic" id="polymorphic">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="queensPerNest">Maximum queens per nest?</label>
+                        <input name="queensPerNest" id="queensPerNest">
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="imageLink">linkaddress of image?</label>
+                        <input name="imageLink" id="imageLink">
+                    </p>
+                </div>
+                <div>
+                    <p><button type="submit">Submit ant species</button>    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body></html>

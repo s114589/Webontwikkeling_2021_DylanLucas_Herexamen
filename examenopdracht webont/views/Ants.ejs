@@ -1,0 +1,16 @@
+<%- include('header')%>
+<div style="display: flex;justify-content: center;">
+    <div style='background-color:gray;text-align: center;width:35%;'>
+        <p>
+            Name: <%=ants.name%><br/><br/>
+            Average queen size: <%=ants.queenSize%><br/><br/>
+            Average worker size: <%=ants.workerSize%><br/><br/>
+            Is this species polymorphic: <%=ants.polymorphic%><br/><br/>
+            Average queens per nest: <%=ants.queensPerNest%><br/><br/>
+            <img src="<%=ants.imageLink%>" style="height:200px;">
+        </p>
+        <p>
+            <a href="/landing"></a>
+        </p>
+    </div>
+</div>

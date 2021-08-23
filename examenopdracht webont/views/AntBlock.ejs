@@ -1,0 +1,9 @@
+<% for (let i=0;i<Ants.length;i++) { %>
+    <div style="display:flex;justify-content: center;">
+        <div style="background-color:gray;text-align: center;width:30%;margin:15px">
+            <%= Ants[i].name%><br/>
+            <a href="/Ants/<%= Ants[i]._id%>">details</a><br/>
+            <a href="/removeAnt/<%= Ants[i]._id%>">remove</a>
+        </div>
+    </div>
+<%};%>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <%- include('header')%>
+        <% for (let i=0;i<Ants.length;i++) { %>
+            <div style="display:flex;justify-content: center;">
+                <div style="background-color:gray;text-align: center;width:30%;margin:15px">
+                    <%= Ants[i].name%><br/>
+                    <a href="/landing/<%= Ants[i]._id%>">details</a><br/>
+                    <a href="/removeAnt/<%= Ants[i]._id%>">remove</a>
+                </div>
+            </div>
+        <%};%>
+        
+        <div style="display:flex;justify-content: center;">
+            <div style="background-color:gray;text-align: center;width:30%;margin:15px">
+                <br/><a href="/addAnt">Add an ant species?</a><br/><br/>
+            </div>
+        </div>
+    </body>
+
+
